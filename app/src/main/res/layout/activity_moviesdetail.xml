@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:drawer="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.MoviesDetailActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher_round"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <SlidingDrawer
+            android:content="@id/n"
+            android:handle="@id/bt"
+            android:layout_weight="9"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp">
+
+            <Button
+                android:id="@+id/bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/n"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#8CFFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="张三"/>
+
+            </LinearLayout>
+
+        </SlidingDrawer>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:button="@null"
+                    android:text="1"
+                    android:textSize="30sp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:button="@null"
+                    android:text="1"
+                    android:background="@color/colorPrimaryDark"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.LoginActivity">
+
+    <EditText
+        android:id="@+id/ed_email"
+        android:hint="请输入邮箱账号"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/ed_yzm"
+            android:hint="请输入验证码"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/but"
+            android:text="忘记密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_dl"
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:text="暂无账号  立即注册"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/but_log"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent"
+        android:text="登录"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:textSize="20sp"
+        android:text="——————或——————"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/but_wx"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent"
+        android:text="微信登录"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

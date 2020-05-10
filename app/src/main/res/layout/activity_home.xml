@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141931"
+    tools:context=".view.activity.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="38dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="26dp"
+            android:src="@mipmap/icon_location"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/bai"
+            tools:text="北京"
+            android:layout_marginLeft="12dp"/>
+
+        <ImageView
+            android:id="@+id/so"
+            android:layout_width="20dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="280dp"
+            android:src="@mipmap/icon_search"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:id="@+id/rb_movie"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:checked="true"
+            android:background="@drawable/movie"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/rb_yingyuan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:background="@drawable/yingyuan"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/rb_my"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:background="@drawable/my"
+            android:layout_height="match_parent" />
+
+    </RadioGroup>
+
+</LinearLayout>
